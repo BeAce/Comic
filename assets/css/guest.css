@@ -1,0 +1,251 @@
+.top{
+    width: 100%;
+    height: 70px;
+	background-image: url(../img/guest-nav.png);
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover; 
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+.img-box{
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;    
+}
+.img-box .imgs{
+    position: relative;
+    margin-top: 4.5%;
+    height: 18%;
+}
+.img-box img{
+    left: 0;
+    top: 0;
+    width: 8.5%;
+    height: 100%;
+    border: 2px solid #e9546b;
+    position: absolute;
+    border-radius:3px;
+    box-shadow:2px 3px 5px rgba(0,0,0,.5);
+    -webkit-box-shadow:2px 3px 5px rgba(0,0,0,.5);
+    -o-box-shadow:2px 3px 5px rgba(0,0,0,.5);
+    -moz-box-shadow:2px 3px 5px rgba(0,0,0,.5);
+}
+.name-decoration{
+	position: absolute;
+	width: 20%;
+	top:17%;
+	background-size: 100% 100%;
+	float: left;
+	z-index: 99999;
+	text-align: center;
+	color: #fff;
+	pointer-events: none;
+}
+.name-decoration2{
+	position: absolute;
+	width:28%;
+	height:31%;
+	top:5%;
+	background-size: 50% 100%;
+	float: left;
+	z-index: 9999;
+	text-align: center;
+	pointer-events: none;
+
+}
+.name-decoration3{
+	position: absolute;
+	width:28%;
+	height:18%;
+	top:2%;
+	/* background-size: 100% 100%; */
+	float: left;
+	z-index: 9999;
+	text-align: center;
+	pointer-events: none;
+	background:url(../img/namedecoration/zy1.png) no-repeat top center;
+}
+.name-decoration4{
+	position: absolute;
+	width:8%;
+	height:15%;
+	top:11%;
+/* 	background-size: 50% 100%; */
+	margin-left:8%;
+	float: left;
+	z-index: -1;
+	text-align: center;
+	pointer-events: none;
+	background:url(../img/namedecoration/zy2.png) no-repeat top center;
+}
+
+.name-decoration5{
+	position: absolute;
+	width:27%;
+	height:15%;
+	top:23%;
+	/* background-size: 50% 100%; */
+	margin-left:2%;
+	float: left;
+	z-index: 9999;
+	text-align: center;
+	pointer-events: none;
+	background:url(../img/namedecoration/zy3.png) no-repeat top center;
+}
+
+/*图片排列样式结束*/
+
+/*图片弹窗样式开始*/
+#close{  
+    background:url(../img/stars/close.png) no-repeat center center;
+	background-size:100% 100%;
+ width:3%; 
+    height:5%;
+    cursor:pointer; 
+    position:absolute; 
+    right:2%; 
+    top:3%; 
+    text-indent:-999em;
+    }
+
+#mask{ 
+    background-color:#ccc;
+    opacity:0.5;
+    filter: alpha(opacity=50); 
+    position:absolute; 
+    left:0;
+    top:0;
+    z-index:1000;
+	display:none;
+    }
+#alert{ 
+    position:fixed;
+    z-index:1001;
+	border-radius:5px;
+	width:0;
+	background:blue;
+	height:0;
+    }
+.alert_con{ 
+	display:none;
+    position:relative; 
+    width:100%;
+    height:100%;
+    background: url(../img/background.png) no-repeat top center;
+}
+
+
+/*contact-us*/
+.contact{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:100%; 
+	height: 70px;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+  	background-size: cover;
+	background-image:url('../img/contact.png');
+	
+}
+.contact-us{
+	position: absolute;
+	left:10%;
+	top:15%;
+	width:80%; 
+	height:80%;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+  	background-size: cover;
+
+}
+.erweima{
+	margin-left:8%;
+/* 	width:374px;
+	height:400px; */
+	width:34%;
+	height:77%;
+	background:url('../img/erweima.png') no-repeat top center;
+	background-size:100% 100%;
+	float:left;
+	margin-right:8%;
+}
+.logoimg-box{
+	width:50%;
+	height:90%;
+	float:left;
+	
+
+
+}
+.logoimg-box ul.logoimg-box1{
+	display:block;
+	margin-top:0;
+	width:40%;
+	float:left;
+	
+	padding:0 0;
+	}
+.logoimg-box ul.logoimg-box2{		
+	display:block;
+
+	width:40%;
+	margin-top:0;
+	float:right;
+	padding:0 0;
+}
+.logoimg-box ul.logoimg-box1 li,ul.logoimg-box2 li{
+	display:block;
+	list-style:none;
+	width:100%;
+	height:70%;
+	margin:0 0 12% 0 ;
+
+}
+.logoimg-box ul.logoimg-box1 li img,ul.logoimg-box2 li img{
+	/* width:226px;
+	height:80px; */
+	width:100%;
+	height:100%;
+}
+
+.copyright{
+	width:100%;
+	height:80px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:#e9546b;
+	
+	font-family:jdzhonyuanjian270042;
+	color:#fff;
+}
+.copyright .copyright-left{
+	text-indent:5%;
+	width:60%;
+	height:20%;
+	margin-top:1.5%;
+	font-size:14px;
+	font-family:"微软雅黑";
+	float:left;
+}
+.copyright .copyright-right{
+	text-indent:5%;
+	width:40%;
+	font-size:14px;
+	font-family:"微软雅黑";
+	float:right;
+}
+.copyright .copyright-right p{
+	font-size:13px;
+	display:block;
+	height:3%;
+	margin:0 0;
+}
