@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="renderer" content="ie-stand">
+    <meta charset="utf-8">
+    <title>ComicCandy动漫嘉年华——CC祭</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" media="screen" /> 
+
+    <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./assets/css/swiper.css">
+<link rel="stylesheet" href="./assets/css/style-1.css">
+<link rel="stylesheet" href="./assets/css/normalize.css">
+ <link rel="stylesheet" href="./assets/css/csshake/csshake.css">
+<link rel="stylesheet" href="./assets/css/guest.css">
+<link href='http://www.youziku.com/webfont/CSS/4ff93404e02f56710bf5b9696be89a33' rel='stylesheet' type='text/css'/>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=qbnYsidEwuCGtkCeAnzNPLb6"></script>
+    <!-- Demo styles -->
+   <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #fff;
+        font-size: 14px;
+        color:#fff;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    .swiper-slide {
+        font-size: 18px;
+        color:#000;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 40px 60px;
+    }
+    .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+    }
+    .swiper-slide .subtitle {
+        font-size: 21px;
+    }
+    .swiper-slide .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 1.3;
+    }
+
+.swiper-pagination-white{
+	opacity: 1;
+	background-color:#e9546b; 
+	height:70px; 
+	/*display: none;*/
+}
+.nav-1{
+	box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	-o-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+.com-shadow{
+	box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	-o-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+.nav-2{
+	z-index: 9999;
+}
+span{
+	display: block;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+span:nth-child(1){
+	left: 3%;
+	width: 25%;
+	height: 100%;
+	background: url("./assets/img/logo.png") no-repeat top center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	margin-right: 5%;
+}
+span:nth-child(1) img{
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+}
+span:nth-child(2),span:nth-child(3),span:nth-child(4),span:nth-child(6),span:nth-child(7){
+	width: 7%;
+	height:37%;
+	top: 30%;
+	margin-left: 3.5%;
+}
+span:nth-child(2) img,span:nth-child(3) img,span:nth-child(4) img,span:nth-child(6) img,span:nth-child(7) img{
+	width: 100%;
+}
+video.shipin{
+	position:absolute;
+	width:60%;
+	height:70%;
+	right:10%;
+	top:18%;
+	z-index: 9999;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="parallax-bg" style="background-image:url(./assets/img/background.png)" data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-no-swiping" role="index"><!-- slide1-->
+	            <!-- top -->
+	            <div class="nav-1" style="width:100%; height:70px;position:absolute; left:0;top:0;">
+		            <!-- nav -->
+		            <div id="navtitle" class="swiper-pagination swiper-pagination-white" style="width:100%; height:70px;"></div>
+		</div>
+	            	<div class="main-1">                 	
+	            		<img src="./assets/img/candy.png" usemap="#candyMap" id="candy" />
+	            		<map name="candyMap">
+	            		  <area class="candyhead"shape="poly" coords="151,7,165,4,184,8,198,16,208,26,212,33,224,21,231,26,232,48,222,61,213,57,206,62,202,78,196,101,177,111,167,103,161,104,155,106,142,100,134,96,125,78,126,56,115,35,119,24,139,29,143,11" >
+	            		  
+	            		    <area class="candyhair" shape="poly" coords="210,59,202,64,196,78,194,103,204,98,210,97,209,113,217,114,219,119,211,128,248,189,274,186,276,206,294,223,295,242,281,265,313,298,364,297,392,275,392,243,371,225,367,192,346,195,355,166,320,144,310,111,277,103,267,87,264,57" >
+
+	                      <area class="candyhair1" shape="poly" coords="113,85,141,102,128,109,54,171,47,185,38,218,30,236,21,216,52,178,54,139,103,118" >
+	                      <area class="candyhair2" shape="poly" coords="105,152,110,157,92,180,63,206,64,188,76,173" >
+	                      <area class="candyhair3" shape="poly" coords="26,275,100,296,107,314,67,335,7,304" >
+
+	                      <area class="bell" shape="poly" coords="156,107,161,105,171,106,176,114,195,100,199,114,192,138,174,125,168,129,157,128,153,126,138,128,142,102" >
+	                      <area class="candybody" shape="poly" coords="198,103,214,97,216,102,214,113,219,114,222,117,215,128,219,137,212,146,217,187,243,239,264,236,283,251,274,252,276,256,262,256,240,262,206,219,194,192,191,180,189,190,203,240,223,278,214,286,224,314,214,322,217,340,173,334,212,369,227,364,228,387,251,414,239,456,216,455,206,444,213,417,207,417,189,395,194,385,173,372,178,402,189,412,182,423,187,430,185,452,171,488,159,495,140,495,129,477,144,452,135,448,136,409,147,407,132,350,106,332,102,294,23,273,28,245,32,227,89,180,110,156,107,150,78,170,68,182,63,202,47,215,40,213,48,180,127,116,133,103,138,111,138,128,155,124,158,130,166,132,175,125,191,136,201,120" >
+	                    </map>
+	                    <!-- tian jia yu yan -->
+            		<img  id="handtip" src="./assets/img/handtip.png" />
+    		<div id="candytalk"></div>
+  <!-- head -->
+    		<audio preload="auto" id="audio-head-1" class="audios1">
+    			<source src="./assets/audio/head/head1.wav" type="audio/wav">
+    			<source src="./assets/audio/head/head1.mp3" type="audio/mp3">
+    			<source src="./assets/audio/head/head1.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio  preload="auto" id="audio-head-2"  class="audios1">
+    			<source src="./assets/audio/head/head2.wav" type="audio/wav">
+    			<source src="./assets/audio/head/head2.mp3" type="audio/mp3">
+    			<source src="./assets/audio/head/head2.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-head-3"  class="audios1">
+    			<source src="./assets/audio/head/head3.wav" type="audio/wav">
+    			<source src="./assets/audio/head/head3.mp3" type="audio/mp3">
+    			<source src="./assets/audio/head/head3.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-head-4" class="audios1" >
+    			 <source src="./assets/audio/head/head4.wav" type="audio/wav">
+    			<source src="./assets/audio/head/head4.mp3" type="audio/mp3">
+    			<source src="./assets/audio/head/head4.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+ <!-- hair-->
+    		<audio preload="auto" id="audio-hair-1" class="audios" >
+    			<source src="./assets/audio/hair/hair1.wav" type="audio/wav">
+    			<source src="./assets/audio/hair/hair1.mp3" type="audio/mp3">
+    			<source src="./assets/audio/hair/hair1.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio  preload="auto" id="audio-hair-2" class="audios" >
+    			<source src="./assets/audio/hair/hair2.wav" type="audio/wav">
+    			<source src="./assets/audio/hair/hair2.mp3" type="audio/mp3">
+    			<source src="./assets/audio/hair/hair2.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio  preload="auto" id="audio-hair-3"  class="audios">
+    			<source src="./assets/audio/hair/hair3.wav" type="audio/wav">
+    			<source src="./assets/audio/hair/hair3.mp3" type="audio/mp3">
+    			<source src="./assets/audio/hair/hair3.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-hair-4" class="audios" >
+    			 <source src="./assets/audio/hair/hair4.wav" type="audio/wav">
+    			<source src="./assets/audio/hair/hair4.mp3" type="audio/mp3">
+    			<source src="./assets/audio/hair/hair4.ogg" type="audio/ogg">
+    		</audio>
+    		<audio preload="auto" id="audio-hair-5" class="audios" >
+    			<source src="./assets/audio/hair/hair5.wav" type="audio/wav">
+    			<source src="./assets/audio/hair/hair5.mp3" type="audio/mp3">
+    			<source src="./assets/audio/hair/hair5.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+<!-- bell -->
+    		<audio preload="auto" id="audio-bell-1"  class="audios">
+    			<source src="./assets/audio/bell/bell1.wav" type="audio/wav">
+    			<source src="./assets/audio/bell/bell1.mp3" type="audio/mp3">
+    			<source src="./assets/audio/bell/bell1.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-bell-2" class="audios" >
+    			<source src="./assets/audio/bell/bell2.wav" type="audio/wav">
+    			<source src="./assets/audio/bell/bell2.mp3" type="audio/mp3">
+    			<source src="./assets/audio/bell/bell2.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-bell-3"  class="audios">
+    			<source src="./assets/audio/bell/bell3.wav" type="audio/wav">
+    			<source src="./assets/audio/bell/bell3.mp3" type="audio/mp3">
+    			<source src="./assets/audio/bell/bell3.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-bell-4"  class="audios">
+    			<source src="./assets/audio/bell/bell4.wav" type="audio/wav">
+    			<source src="./assets/audio/bell/bell4.mp3" type="audio/mp3">
+    			<source src="./assets/audio/bell/bell4.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-bell-5" class="audios" >
+    			<source src="./assets/audio/bell/bell5.wav" type="audio/wav">
+    			<source src="./assets/audio/bell/bell5.mp3" type="audio/mp3">
+    			<source src="./assets/audio/bell/bell5.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+
+    		<audio preload="auto" id="audio-bell-6"  class="audios">
+    			<source src="./assets/audio/bell/bell6.wav" type="audio/wav">
+    			<source src="./assets/audio/bell/bell6.mp3" type="audio/mp3">
+    			<source src="./assets/audio/bell/bell6.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+
+  <!-- bell -->
+    		<audio  preload="auto" id="audio-body-1" class="audios" >
+    			<source src="./assets/audio/body/body1.wav" type="audio/wav">
+    			<source src="./assets/audio/body/body1.mp3" type="audio/mp3">
+    			<source src="./assets/audio/body/body1.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-body-2"  class="audios">
+    			<source src="./assets/audio/body/body2.wav" type="audio/wav">
+    			<source src="./assets/audio/body/body2.mp3" type="audio/mp3">
+    			<source src="./assets/audio/body/body2.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio  preload="auto" id="audio-body-3"  class="audios">
+    			<source src="./assets/audio/body/body3.wav" type="audio/wav">
+    			<source src="./assets/audio/body/body3.mp3" type="audio/mp3">
+    			<source src="./assets/audio/body/body3.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio preload="auto" id="audio-body-4"  class="audios">
+    			<source src="./assets/audio/body/body4.wav" type="audio/wav">
+    			<source src="./assets/audio/body/body4.mp3" type="audio/mp3">
+    			<source src="./assets/audio/body/body4.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio  preload="auto" id="audio-body-5"  class="audios">
+    			<source src="./assets/audio/body/body5.wav" type="audio/wav">
+    			<source src="./assets/audio/body/body5.mp3" type="audio/mp3">
+    			<source src="./assets/audio/body/body5.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<audio  preload="auto" id="audio-body-6"  class="audios">
+    			<source src="./assets/audio/body/body6.wav" type="audio/wav">
+    			<source src="./assets/audio/body/body6.mp3" type="audio/mp3">
+    			<source src="./assets/audio/body/body6.ogg" type="audio/ogg">
+    			您的浏览器不支持 audio 标签。
+    		</audio>
+    		<div id="buyticket"><a href="http://shop110467210.taobao.com/?spm=a230r.7195193.1997079397.2.AA2fFS&v=1" target="_blank"><img   src="./assets/img/buyticket0.png" /></a></div>
+    		<img id="logoshow" src="./assets/img/logoshow.png" />
+    	</div><!-- main-->
+            </div>
+            <div class="swiper-slide swiper-no-swiping"><!-- slide2-->
+	             <!-- top -->
+	            <div class="nav-2" style="width:100%; height:70px;position:absolute; left:0;top:0;">
+		            <!-- nav -->
+		            <div id="navtitle1" class="swiper-pagination swiper-pagination-white" style="width:100%; height:70px;"></div>
+		</div>
+		<div class="videotitle com-shadow"></div>
+
+                     <!-- vide0 -->
+                      <div id="video_swf">
+                                <embed src="http://player.youku.com/player.php/sid/XOTM1NDY0MzYw/v.swf" allowFullScreen="true" quality="high" width="100%" height="100%" align="center" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                        </div>
+	            	
+	            	<img class="videotitlecandy" src="./assets/img/candy.png" usemap="#candyMap1" />
+            	<map name="candyMap1">
+            		<area class="page2candy" shape="poly" coords="160,8,175,8,196,14,213,28,228,26,232,49,234,58,262,57,273,73,259,80,256,70,235,71,278,95,281,102,314,115,328,143,356,160,360,190,376,191,379,231,397,243,397,273,374,296,361,302,317,299,292,280,282,262,299,244,299,221,282,212,275,190,258,190,222,140,221,192,247,235,269,235,287,250,276,262,267,257,246,263,204,203,199,173,192,172,189,190,210,245,225,275,219,286,226,317,216,318,220,342,183,334,210,366,225,367,229,382,252,415,246,432,246,450,230,456,217,454,210,432,215,416,207,410,197,400,189,392,198,386,174,368,178,401,188,409,183,424,187,440,180,457,180,472,168,491,142,492,135,472,148,450,136,423,149,410,138,355,135,343,116,333,109,323,99,324,72,335,6,302,23,277,29,240,21,209,57,173,57,138,106,114,128,74,129,57,121,37,125,30,146,36,149,16" >
+            	</map>
+            	<div id="candytalk2"></div>
+            </div>
+
+            <div class="swiper-slide swiper-no-swiping"><!-- slide3-->
+	  	 <!-- top -->
+	            <div class="nav-2" style="width:100%; height:70px; position:absolute; left:0;top:0;z-index:1000;">
+		            <!-- nav -->
+		            <div id="navtitle2" class="swiper-pagination swiper-pagination-white" style="width:100%; height:70px;"></div>
+		</div>
+	            <div class="top com-shadow"></div>
+	                <!-- 图片排列开始 -->
+	                <div class="img-box">
+	                    <div class="imgs img-box1">
+                        	<img src="assets/img/head-img/1.png" class="img1" id="1">
+                        	<img src="assets/img/head-img/2.png" class="img2" id="2">
+                         	<img src="assets/img/head-img/3.png" class="img3" id="3">
+	                        <img src="assets/img/head-img/4.png" class="img4" id="4">
+	                        <img src="assets/img/head-img/5.png" class="img5" id="5">
+	                        <img src="assets/img/head-img/6.png" class="img6" id="6">
+	                        <img src="assets/img/head-img/7.png" class="img7" id="7">
+	                    </div>
+	                    <div class="name-decoration" style="display:none;"></div>
+                        <div class="name-decoration2" style="display:none;"></div>
+                        <div class="name-decoration3" style="display:none;"></div>
+                        <div class="name-decoration4" style="display:none;"></div>
+                        <div class="name-decoration5" style="display:none;"></div>
+                        <div class="name-decoration6" style="display:none;"></div>
+	                    <div class="imgs img-box2">
+	                        <img src="assets/img/head-img/8.jpg" class="img1">
+	                        <img src="assets/img/head-img/9.jpg" class="img2">
+	                        <img src="assets/img/head-img/10.jpg" class="img3">
+	                        <img src="assets/img/head-img/11.jpg" class="img4">
+	                        <img src="assets/img/head-img/12.jpg" class="img5">
+	                        <img src="assets/img/head-img/13.jpg" class="img6">
+	                        <img src="assets/img/head-img/14.jpg" class="img7">
+	                    </div>
+	                    <div class="imgs img-box3">
+	                        <img src="assets/img/head-img/15.jpg" class="img1">
+	                        <img src="assets/img/head-img/16.jpg" class="img2">
+	                        <img src="assets/img/head-img/17.jpg" class="img3">
+	                        <img src="assets/img/head-img/18.jpg" class="img4">
+	                        <img src="assets/img/head-img/19.jpg" class="img5">
+	                        <img src="assets/img/head-img/20.jpg" class="img6">
+	                        <img src="assets/img/head-img/21.jpg" class="img7">
+	                    </div>
+	                </div>
+	                <!-- 图片排列结束 -->
+            </div>
+            <div class="swiper-slide swiper-no-swiping"><!-- slide4-->
+	            <!-- top -->
+	            <div class="nav-2" style="width:100%; height:70px;position:absolute; left:0;top:0;">
+		            <!-- nav -->
+		            <div id="navtitle3" class="swiper-pagination swiper-pagination-white" style="width:100%; height:70px;"></div>
+		</div>
+	            <div class="activitytitle1 com-shadow"></div>
+	            <img class="attention" src="./assets/img/attention.png" />
+	            <img id="goto" src="./assets/img/geto.png" />
+	            <div id="mapbox" >
+	            <img class="boxrightdown" src="./assets/img/rightdown.png" />
+	            <img class="boxleft" src="./assets/img/left.png" />
+	            <img class="boxright" src="./assets/img/right.png" />
+	            <img class="boxtop" src="./assets/img/top.png" />
+	            <img class="boxdown" src="./assets/img/down.png" />
+	            <img class="boxlefttop" src="./assets/img/lefttop.png" />
+	             <div id="map" class="map-con"></div>
+	             </div>
+	             <img class="mapbox2" src="./assets/img/mapbox2.png" />
+	             <img class="alertway" src="./assets/img/alertway.png" />
+            </div>
+            <div class="swiper-slide swiper-no-swiping"><!-- slide5-->
+	                 <!-- top -->
+	            <div class="nav-2" style="width:100%; height:70px;position:absolute; left:0;top:0;">
+		            <!-- nav -->
+		            <div id="navtitle4" class="swiper-pagination swiper-pagination-white" style="width:100%; height:70px;"></div>
+		</div>
+	            	<div class="activitytitle2 com-shadow"></div>
+	               <div style="clear:both"></div>
+            		<div class="img-people">
+			<img src="./assets/img/act-1.png" class="img-people1"/>
+			<img src="./assets/img/act-2.png" class="img-people2"/>
+			<img src="./assets/img/act-3.png" class="img-people3" id="people3" />
+			<img src="./assets/img/act-4.png" class="img-people4"/>
+			
+		</div>
+	        
+          	  </div>
+            <div class="swiper-slide swiper-no-swiping"><!-- slide6-->
+	            <!-- top -->
+	            <div class="nav-2" style="width:100%; height:70px;position:absolute; left:0; top:0;">
+		           <!-- nav -->
+		            <div id="navtitle5" class="swiper-pagination swiper-pagination-white" style="width:100%; height:70px;"></div>
+		</div>
+            	<div class="needtitle com-shadow"></div>
+            	<div class="imfornpc">
+                    <div class="need-you imfornpc-com">
+                        <h3 class="need-title1"></h3>
+                        <p class="p-title p-first">广告合作:</p>
+                        <p class="p-tel">QQ：1067345412</p>
+                <p class="p-tel">TEL：18678217621</p>
+                <p class="p-title">展位预定：</p>
+                <p class="p-tel">TEL：18678217621</p>
+                <p class="p-title">NPC报名：</p>
+                <p class="p-tel">TEL：18678217621</p>
+                <p class="p-title">妹抖报名：</p>
+                <p class="p-tel">TEL：18678217621</p>
+                <p class="p-title">水手服报名：</p>
+                <p class="p-tel">TEL：18678217621</p>
+                <div class="download-href">
+                    <a href="http://pan.baidu.com/s/1gds4iFD" target="_blank"><img src="./assets/img/download.png"></a>
+                </div>
+                    </div>
+                    <div class="npc imfornpc-com">
+                        <h3 class="need-title2"></h3>
+                        <img src="./assets/img/npccon.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide swiper-no-swiping"><!-- slide7-->     
+	             <!-- top -->
+	            <div class="nav-2" style="width:100%; height:70px;position:absolute; left:0;top:0;">
+		            <!-- nav -->
+		            <div id="navtitle6" class="swiper-pagination swiper-pagination-white" style="width:100%; height:70px;"></div>
+		</div>
+		<div class="contact com-shadow"></div>
+		<div class="contact-us">
+			<div class="erweima"></div>
+			<div class="logoimg-box">
+			<ul class="logoimg-box1">
+				<li><img src="./assets/img/contact-logo/missevan.png"></li>
+				<li><img src="./assets/img/contact-logo/moeyu.png"></li>
+				<li><img src="./assets/img/contact-logo/tengxun.png"></li>
+				<li><img src="./assets/img/contact-logo/bcy.png"></li>
+			</ul>
+			<ul class="logoimg-box2">
+				<li><img src="./assets/img/contact-logo/manhua.png"></li>
+				<li><img src="./assets/img/contact-logo/ibuka.png"></li>
+				<li><img src="./assets/img/contact-logo/nyato.png"></li>
+				<li><img src="./assets/img/contact-logo/huanfu.png"></li>
+			</ul>
+		</div>			
+		<div style="clear:both"></div>
+		</div>
+		<div class="copyright">
+			<div class="copyright-left">上海幻府网络科技有限公司旗下网站  www.comiccandy.net 版权所有 &copy;2015</div>
+			<div class="copyright-right">
+                                <p>&nbsp;&nbsp;&nbsp;</p>
+				<p>官方微博：comiccandy_糖糖&nbsp;&nbsp;&nbsp;微博主页：http://weibo.com/comiccandy</p>
+				<p>官方QQ群：1群：436386921  2群：283844969</p>
+			</div>
+		</div>
+	</div>
+        </div>
+        <!-- Add Pagination already remove to every swiper-->
+        <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+
+    
+ </body>
+ <!-- Swiper JS -->
+ <script type="text/javascript" src="assets/js/jump.js"></script>
+     <script src="./assets/plugins/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="assets/js/swiper1js/baidumap.js"></script>
+  <script src="./assets/plugins/swiperplugins/swiper.jquery.min.js"></script>
+   <script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+    <!-- Initialize Swiper -->
+<script type="text/javascript">
+	    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        parallax: true,
+        speed: 600,
+
+        onSlideChangeStart: function(swiper){ 
+        	// if(swiper.activeIndex == 0){
+        	// 	$(".swiper-pagination").css({"display":"block"});
+        	// }
+/*        	if(swiper.activeIndex == 0 || swiper.activeIndex == 2 || swiper.activeIndex == 3 || swiper.activeIndex == 4 || swiper.activeIndex == 5 || swiper.activeIndex == 6 || swiper.activeIndex == 7){
+		$("video.shipin")[0].pause();
+        	}*/
+     
+            player = new YKU.Player('video_swf',{
+                styleid: '8',
+                client_id: 'cf897be7f395c440',
+                vid: 'XOTM1NDY0MzYw/v',
+                autoplay: false
+            });
+        	if(swiper.activeIndex == 2 || swiper.activeIndex == 3){
+		$(".img-box img").css({"left":"-100%"});
+        	}
+        },   	
+
+        onSlideChangeEnd: function(swiper){
+        	if(swiper.activeIndex == 2){
+		swiper2();
+        	}
+        },
+       paginationBulletRender: function (index, className) {  
+       	$('.swiper-pagination-bullet').click(function(){
+		swiper.slideTo(0, 600, false);
+	})
+	       if (index == 4) {
+	       	 return '<span class="' + className + '"/>' + '</span>';
+	       }else{
+	     	 return '<span class="' + className + '">' + '<img src="./assets/img/logo-img/nav'+index+'.png"/>' + '</span>';
+	       }
+       }
+ });
+    //调用弹窗
+window.onload=function(){
+	 $("span:nth-child(2),span:nth-child(3),span:nth-child(4),span:nth-child(6),span:nth-child(7)").find("img").each(function(k,img){
+		new JumpObj(img,8);
+	});
+	$(".road").hover(function(){
+		$(".alert-road").show();
+	},function(){
+		$(".alert-road").hide();
+	});
+     $(".img-box1  .img1").click(function(){
+        openNew();  
+        var mask_height = $("#mask").height();
+        var mask_width = $("#mask").width();
+        var alert_width = mask_width*0.5;
+        var alert_height = mask_height*0.6;
+        $("#mask").fadeIn();        
+        $("#alert").css({"background":"url('./assets/img/stars/xxb.png') no-repeat top center","background-size":"100% 100%"});
+        $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });
+    $(".img-box1  .img2").click(function(){
+        openNew();
+        var mask_height = $("#mask").height();
+        var mask_width = $("#mask").width();
+        var alert_width = mask_width*0.5;
+        var alert_height = mask_height*0.6;
+        $("#mask").fadeIn();        
+        $("#alert").css({"background":"url('./assets/img/stars/xs.png') no-repeat top center","background-size":"100% 100%"});
+        $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });
+    $(".img-box1  .img3").click(function(){
+        openNew();
+        var mask_height = $("#mask").height();
+        var mask_width = $("#mask").width();
+        var alert_width = mask_width*0.5;
+        var alert_height = mask_height*0.6;
+        $("#mask").fadeIn();        
+        $("#alert").css({"background":"url('./assets/img/stars/ykm.png') no-repeat top center","background-size":"100% 100%"});
+        $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });
+    $(".img-box1  .img4").click(function(){
+        openNew();
+        var mask_height = $("#mask").height();
+        var mask_width = $("#mask").width();
+        var alert_width = mask_width*0.5;
+        var alert_height = mask_height*0.6;
+        $("#mask").fadeIn();        
+        $("#alert").css({"background":"url('./assets/img/stars/yd.png') no-repeat top center","background-size":"100% 100%"});
+        $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });
+    $(".img-box1  .img5").click(function(){
+        openNew();
+        var mask_height = $("#mask").height();
+        var mask_width = $("#mask").width();
+        var alert_width = mask_width*0.5;
+        var alert_height = mask_height*0.6;
+        $("#mask").fadeIn();        
+        $("#alert").css({"background":"url('./assets/img/stars/0909.png') no-repeat top center","background-size":"100% 100%"});
+        $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });
+    $(".img-box1  .img6").click(function(){
+        openNew();
+        var mask_height = $("#mask").height();
+        var mask_width = $("#mask").width();
+        var alert_width = mask_width*0.5;
+        var alert_height = mask_height*0.6;
+        $("#mask").fadeIn();        
+        $("#alert").css({"background":"url('./assets/img/stars/cc.png') no-repeat top center","background-size":"100% 100%"});
+        $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });
+    $(".img-box1  .img7").click(function(){
+        openNew();
+        var mask_height = $("#mask").height();
+        var mask_width = $("#mask").width();
+        var alert_width = mask_width*0.5;
+        var alert_height = mask_height*0.6;
+        $("#mask").fadeIn();        
+        $("#alert").css({"background":"url('./assets/img/stars/ss.png') no-repeat top center","background-size":"100% 100%"});
+        $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });
+clickImg(".img-box2  img","./assets/img/stars/2-");
+clickImg(".img-box3  img","./assets/img/stars/3-");
+function clickImg(className,url){
+    $(className).click(function(){
+            var $index = $(this).index()+1;
+            //alert($index);
+            openNew();
+            var mask_height = $("#mask").height();
+            var mask_width = $("#mask").width();
+            var alert_width = mask_width*0.5;
+            var alert_height = mask_height*0.6;
+            $("#mask").fadeIn();        
+            $("#alert").css({"background":"url("+url+""+$index+".png) no-repeat top center","background-size":"100% 100%"});
+            $("#alert").animate({"width":alert_width,"height":alert_height,"left":alert_width/2,"top":alert_height/2.8},500);
+    });   
+}
+
+$(".img-people img").each(function(k,img){
+		new JumpObj(img,15);
+	});
+}
+
+</script>
+        <!-- Swiper-1 JS -->
+
+    	<script src="./assets/js/swiper1js/swiper1js.js"></script>
+    	<script type="text/javascript" src="./assets/js/jquery.js"></script>
+ 	<script type="text/javascript" src="./assets/js/alert.js"></script>
+ 	<script type="text/javascript" src="./assets/js/act-alert.js"></script>
+	<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
+
+	</html>
